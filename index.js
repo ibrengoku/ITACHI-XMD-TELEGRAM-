@@ -110,53 +110,124 @@ bot.command('menu', async (ctx) => {
 
 📋 *MENU PRINCIPAL*
 
-🔗 *CONNEXION WHATSAPP*
-│ /connect <numéro>
-│ /disconnect
+╔═〔 🥷𝐈𝐓𝐀𝐂𝐇𝐈-𝐗𝐌𝐃 〕═❒
+║╭─────────────◆
+║│           *❍ 𝗠𝗘𝗡𝗨*
+║╰─────────────◆
+╚══════════════════❒
 
-👤 *INFO & PROFIL*
-│ /ping  /alive  /profil
-│ /uptime  /owner  /stats
+╔══════════════════❒
+║ ⿻ *prefix:* [/]
+║ ⿻ *owner:* IBSACKO 🥷
+║ ⿻ *mode:* PRIVÉ
+║ ⿻ *version:* 2.0
+╚══════════════════❒
 
-🛡️ *MODÉRATION GROUPE*
-│ /kick  /ban  /unban
-│ /warn  /warnings  /resetwarn
-│ /promote  /demote
-│ /mute  /unmute
-│ /tagall  /hidetag  /signal
+👤 𝐈𝐁𝐑𝐀𝐇𝐈𝐌𝐀 𝐒𝐎𝐑𝐘 𝐒𝐀𝐂𝐊𝐎
 
-🔐 *PROTECTION*
-│ /antilink on\|off
-│ /antibadword on\|off
-│ /welcome on\|off
-│ /antibot on\|off
+╔══════════════════❒
+║ 🔗 *CONNEXION WHATSAPP*
+║ ⿻ /connect <numéro>
+║ ⿻ /disconnect
+╚══════════════════❒
 
-🎮 *FUN & JEUX*
-│ /joke  /fact  /meme  /quote
-│ /truth  /dare  /ship  /simp
-│ /eightball  /trivia  /hangman
-│ /compliment  /insult  /flirt
-│ /wasted  /tictactoe
+╔══════════════════❒
+║ 👤 *INFO & PROFIL*
+║ ⿻ /ping
+║ ⿻ /alive
+║ ⿻ /profil
+║ ⿻ /uptime
+║ ⿻ /owner
+║ ⿻ /stats
+╚══════════════════❒
 
-🎵 *MEDIA*
-│ /play <titre>  /song <titre>
-│ /tiktok <lien>  /gif <mot>
-│ /lyrics <titre>
+╔══════════════════❒
+║ 🛡️ *MODÉRATION GROUPE*
+║ ⿻ /kick
+║ ⿻ /ban
+║ ⿻ /unban
+║ ⿻ /warn
+║ ⿻ /warnings
+║ ⿻ /resetwarn
+║ ⿻ /promote
+║ ⿻ /demote
+║ ⿻ /mute
+║ ⿻ /unmute
+║ ⿻ /tagall
+║ ⿻ /hidetag
+║ ⿻ /signal
+╚══════════════════❒
 
-🖼️ *IMAGE & AI*
-│ /image <recherche>
-│ /imagine <prompt>
-│ /sticker  /toimage
-│ /ai <question>  /translate
+╔══════════════════❒
+║ 🔐 *PROTECTION*
+║ ⿻ /antilink on|off
+║ ⿻ /antibadword on|off
+║ ⿻ /welcome on|off
+║ ⿻ /antibot on|off
+╚══════════════════❒
 
-🌍 *UTILITAIRES*
-│ /weather <ville>
-│ /news  /tts <texte>
-│ /github <user>  /ss <url>
+╔══════════════════❒
+║ 🎮 *FUN & JEUX*
+║ ⿻ /joke
+║ ⿻ /fact
+║ ⿻ /meme
+║ ⿻ /quote
+║ ⿻ /truth
+║ ⿻ /dare
+║ ⿻ /ship
+║ ⿻ /simp
+║ ⿻ /eightball
+║ ⿻ /trivia
+║ ⿻ /hangman
+║ ⿻ /compliment
+║ ⿻ /insult
+║ ⿻ /flirt
+║ ⿻ /wasted
+║ ⿻ /tictactoe
+╚══════════════════❒
 
-👑 *ADMIN*
-│ /broadcast <msg>
-│ /admin  /afk
+╔══════════════════❒
+║ 🎵 *MEDIA*
+║ ⿻ /play <titre>
+║ ⿻ /song <titre>
+║ ⿻ /tiktok <lien>
+║ ⿻ /gif <mot>
+║ ⿻ /lyrics <titre>
+╚══════════════════❒
+
+╔══════════════════❒
+║ 🖼️ *IMAGE & AI*
+║ ⿻ /image <recherche>
+║ ⿻ /imagine <prompt>
+║ ⿻ /sticker
+║ ⿻ /toimage
+║ ⿻ /ai <question>
+║ ⿻ /translate
+╚══════════════════❒
+
+╔══════════════════❒
+║ 🌍 *UTILITAIRES*
+║ ⿻ /weather <ville>
+║ ⿻ /news
+║ ⿻ /tts <texte>
+║ ⿻ /github <user>
+║ ⿻ /ss <url>
+╚══════════════════❒
+
+╔══════════════════❒
+║ 👑 *ADMIN*
+║ ⿻ /broadcast <msg>
+║ ⿻ /admin
+║ ⿻ /afk
+╚══════════════════❒
+
+╔══════════════════❒
+║ 📞 *CONTACT*
+║ wa.me/224621963059
+║ wa.me/224666952949
+╚══════════════════❒
+
+> powered by CENTRAL-HEX 🇬🇳
 
 > Propulsé par 🥷 ${OWNER} · CENTRAL-HEX`
         , parse_mode: 'Markdown'
