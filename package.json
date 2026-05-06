@@ -1,0 +1,17 @@
+{
+  "name": "itachi-xmd-telegram",
+  "version": "2.0.0",
+  "description": "Bot Telegram ITACHI-XMD by CENTRAL-HEX",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "IBSACKO™ - CENTRAL-HEX",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.15.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6",
+    "axios": "^1.6.0"
+  }
+}
