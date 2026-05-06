@@ -242,21 +242,7 @@ bot.command('ping', async (ctx) => {
     const ramTotal = (os.totalmem()/1024/1024).toFixed(0);
     const ramPct = ((process.memoryUsage().rss/os.totalmem())*100).toFixed(0);
     const icon = ping<100?'🟢':ping<300?'🟡':'🔴';
-    await ctx.telegram.editMessageText(ctx.chat.id, msg.message_id, null,
-`┏━━━━━━━━━━━━━━━━━━━━━━┓
-┃  🥷 ${BOT_NAME} v${VERSION} 🥷  ┃
-┗━━━━━━━━━━━━━━━━━━━━━━┛
-
-${icon} Ping     : ${ping} ms
-⏱️ Uptime   : ${formatUptime(Math.floor(process.uptime()))}
-📦 Version  : v${VERSION}
-🌐 Node.js  : ${process.version}
-
-💾 RAM — ${ramUsed}/${ramTotal} MB
-[${bar(parseInt(ramPct))}] ${ramPct}%
-🖥️ OS : ${os.platform()}
-
-> 🥷 ${OWNER}`);
+`🥷 ${BOT_NAME} v${VERSION}\n\n${icon} Ping : ${ping} ms\n⏱️ Uptime : ${formatUptime(Math.floor(process.uptime()))}\n💾 RAM : ${ramUsed}/${ramTotal} MB [${bar(parseInt(ramPct))}] ${ramPct}%\n🖥️ OS : ${os.platform()}\n\n> 🥷 ${OWNER}`);
 });
 
 bot.command('alive', async (ctx) => {
