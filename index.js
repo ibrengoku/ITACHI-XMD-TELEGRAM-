@@ -26,8 +26,8 @@ const axios = require('axios');
 const fetch = require('node-fetch');
 
 // ===== CONFIG =====
-const BOT_TOKEN = 'YOUR_TOKEN_HERE';
-const ADMIN_ID  = 123456789;
+const BOT_TOKEN = '8623448257:AAF8NZuhSJPWkkiXtpPDcbjUbQPiYCRf4vM';
+const ADMIN_ID  = 5838309886;
 const VERSION   = '2.0.0';
 const BOT_NAME  = 'ITACHI-XMD';
 const OWNER     = 'IBSACKO™';
