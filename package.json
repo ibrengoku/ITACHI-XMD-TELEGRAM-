@@ -3,15 +3,19 @@
   "version": "2.0.0",
   "description": "Bot Telegram ITACHI-XMD by CENTRAL-HEX",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "scripts": { "start": "node index.js" },
   "author": "IBSACKO™ - CENTRAL-HEX",
   "license": "MIT",
   "dependencies": {
     "telegraf": "^4.15.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.6",
-    "axios": "^1.6.0"
+    "axios": "^1.6.0",
+    "node-fetch": "^2.7.0",
+    "gtts": "^0.2.1",
+    "yt-search": "^2.11.0",
+    "@whiskeysockets/baileys": "^6.7.5",
+    "pino": "^8.1.0",
+    "qrcode": "^1.5.3"
   }
 }
