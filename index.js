@@ -87,7 +87,7 @@ bot.start(async (ctx) => {
     await registerUser(ctx);
     const name = ctx.from.first_name || 'Opérateur';
     await ctx.replyWithPhoto(BOT_IMAGE, {
-        caption: `┏━━━━━━━━━━━━━━━━━━━━━━┓\n┃  🥷 ${BOT_NAME} v${VERSION} 🥷  ┃\n┗━━━━━━━━━━━━━━━━━━━━━━┛\n\n👋 Bienvenue *${name}* !\n\n🤖 Bot développé par *CENTRAL-HEX*\n👑 Owner : *${OWNER}*\n\n✅ Enregistré avec succès !\n💡 Tape /menu pour toutes les commandes\n\n> Propulsé par 🥷 ${OWNER} · CENTRAL-HEX`,
+        caption: `🥷 *${BOT_NAME} v${VERSION}*\n\n👋 Bienvenue *${name}* !\n\n🤖 CENTRAL-HEX\n👑 Owner : ${OWNER}\n\n✅ Enregistré !\n💡 /menu pour les commandes\n\n> 🥷 ${OWNER}`,
         parse_mode: 'Markdown',
         ...Markup.inlineKeyboard([
             [Markup.button.callback('📖 Menu', 'menu_btn'), Markup.button.callback('👤 Profil', 'profile')],
@@ -103,7 +103,9 @@ bot.start(async (ctx) => {
 bot.command('menu', async (ctx) => {
     await registerUser(ctx);
     await ctx.replyWithPhoto(BOT_IMAGE, {
-        caption:
+        caption: `🥷 *${BOT_NAME} v${VERSION} — MENU*\n\n🔗 /connect — WhatsApp\n📊 /ping /alive /profil /stats\n🛡️ /kick /ban /warn /promote /mute\n🔐 /antilink /welcome /antibadword\n🎮 /hangman /trivia /tictactoe\n😄 /joke /fact /meme /truth /dare\n🎵 /play /tiktok /spotify /lyrics\n🤖 /ai /gpt /gemini /imagine /flux\n🖼️ /image /sticker /removebg /ss\n🌍 /weather /translate /tts /news\n🎭 /neon /fire /matrix /hacker\n👑 /broadcast /admin /setsudo\n\n/allmenu → toutes les commandes\n\n> 🥷 ${OWNER}`, parse_mode: 'Markdown'
+    });
+});
 `┏━━━━━━━━━━━━━━━━━━━━━━┓
 ┃  🥷 ${BOT_NAME} v${VERSION} 🥷  ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━┛
@@ -229,11 +231,6 @@ bot.command('menu', async (ctx) => {
 
 > powered by CENTRAL-HEX 🇬🇳
 
-> Propulsé par 🥷 ${OWNER} · CENTRAL-HEX`
-        , parse_mode: 'Markdown'
-    });
-});
-
 // ===========================
 //   ⚡ PING & ALIVE
 // ===========================
@@ -264,7 +261,7 @@ ${icon} Ping     : ${ping} ms
 
 bot.command('alive', async (ctx) => {
     await ctx.replyWithPhoto(BOT_IMAGE, {
-        caption: `┏━━━━━━━━━━━━━━━━━━━━━━┓\n┃  🥷 ${BOT_NAME} v${VERSION} 🥷  ┃\n┗━━━━━━━━━━━━━━━━━━━━━━┛\n\n💚 *OUI JE SUIS VIVANT !*\n\n✅ Statut   : En ligne\n⏱️ Uptime   : ${formatUptime(Math.floor(process.uptime()))}\n📦 Version  : v${VERSION}\n👤 Owner    : ${OWNER}\n💾 RAM      : ${(process.memoryUsage().rss/1024/1024).toFixed(1)} MB\n\n🛡️ Fonctions actives :\n⬡ Connexion WhatsApp via /connect\n⬡ Modération groupe complète\n⬡ Fun & Jeux, Media, AI\n⬡ Antilink, Welcome, Antibot\n\n> 🥷 ${OWNER} · CENTRAL-HEX`, parse_mode: 'Markdown'
+        caption: `🥷 *${BOT_NAME} v${VERSION}*\n\n💚 OUI JE SUIS VIVANT !\n\n✅ Statut : En ligne\n⏱️ Uptime : ${formatUptime(Math.floor(process.uptime()))}\n💾 RAM : ${(process.memoryUsage().rss/1024/1024).toFixed(1)} MB\n👤 Owner : ${OWNER}\n\n> 🥷 ${OWNER} · CENTRAL-HEX`, parse_mode: 'Markdown'
     });
 });
 
